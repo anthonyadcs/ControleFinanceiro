@@ -1,0 +1,242 @@
+/*GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7de1a4;
+    color: #063a19;
+}
+
+/*ELEMENTOS DA PÁGINA*/
+
+header,
+.main,
+.form-transacoes,
+.resultados {
+    margin-bottom: 3rem;
+}
+
+.form-transacoes input::placeholder {
+    color: rgba(6, 58, 25);
+}
+
+.form-transacoes input:hover::placeholder {
+    color: #46b971;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Conteudo */
+
+
+#container {
+    background-color: white;
+    min-width: max-content;
+    max-height: fit-content;
+    padding: 1rem 2rem 0rem 2rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* TITULO */
+
+header {
+    padding-left: 1rem;
+    margin-top: 4rem;
+    height: 3rem;
+    color: #063a19;
+    text-align: center;
+}
+
+header h1 {
+    display: inline-block;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/*ENTRADAS SAIDAS TOTAL*/
+.main ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main ul li {
+    padding: 1.5rem 2rem 1.5rem 1rem;
+    border-radius: 40px;
+    background-color: #7de1a4;
+}
+
+.main ul li p {
+    font-weight: bold;
+}
+
+.main ul li h4,
+.main ul li p {
+    color: #063a19;
+}
+
+/*INPUTS DE ENVIO*/
+
+.form-transacoes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-transacoes label {
+    display: block;
+    margin-bottom: .5rem;
+    color: #063a19;
+    font-weight: bold;
+}
+
+.form-transacoes input {
+    width: 100%;
+    background-color: #7de1a4;
+    border: none;
+    border-bottom: 1px solid #a8cdae;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: #063a19;
+    font-weight: bold;
+}
+
+.form-transacoes select {
+    display: inline-block;
+    width: 60%;
+    background-color: #7de1a4;
+    color: #063a19;
+    font-weight: bold;
+    border: none;
+}
+
+.form-transacoes button {
+    justify-content: right;
+    width: 30%;
+    background-color: #7de1a4;
+    color: #063a19;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.form-transacoes input:hover,
+.form-transacoes select:hover {
+    background-color: #b4c9b7;
+    transition: all ease ease-in-out .5s;
+}
+
+.form-transacoes input,
+.form-transacoes select,
+.form-transacoes button {
+    border-radius: 3px;
+    height: 2.5rem;
+    border-radius: 40px;
+    transition: transform .5s ease;
+    padding: .8rem;
+}
+
+.form-transacoes input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #6dbb79;
+    border-radius: 40px;
+}
+
+.form-transacoes input:hover,
+.form-transacoes select:hover,
+.form-transacoes button:hover {
+    background-color: #46b971;
+    background-color: #063a19;
+    color: #7de1a4;
+    font-weight: bold;
+    transform: scale(1.05)
+}
+
+.form-transacoes .input-transacoes #descricao-input {
+    width: 100%;
+}
+
+
+
+.button-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* TABELAS */
+
+.resultados {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7de1a4;
+    border-radius: 40px;
+    padding: 1ch 2rem;
+}
+
+.fa-solid .fa-caret-down {
+    text-align: center;
+}
+
+.transacao-tipo {
+    padding-right: 6px;
+}
+
+.fa-caret-up {
+    color: #118b29;
+}
+
+.fa-caret-down {
+    color: rgb(223, 40, 40);
+}
+
+.fa-trash-can {
+    cursor: pointer;
+    color: #063a19;
+}
+
+.basic {
+    text-align: right;
+}
+
+.btn-lixeira {
+    background-color: #7de1a4;
+    border: none;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table tbody td {
+    border-bottom: 1px solid rgba(6, 58, 25, .2);
+}
