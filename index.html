@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Controle Financeiro</title>
+    <link rel="icon" href="css/fontawesome/css/money-bill-wave-solid.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Controle Financeiro</h1>
+        </header>
+
+        <main class="main">
+            <ul>
+                <li id="entrada">
+                    <h4>Entradas</h4>
+                    <p class="valor-entrada"></p>
+                </li>
+                <li id="saida">
+                    <h4>Saida</h4>
+                    <p class="valor-saida"></p>
+                </li>
+                <li id="total">
+                    <h4>Total</h4>
+                    <p class="valor-total"></p>
+                </li>
+            </ul>
+        </main>
+
+        <form class="form-transacoes">
+            <label>Descricao</label>
+            <input type="text" id="descricao-input" autocomplete="off">
+
+            <label>Valor</label>
+            <input type="text" id="valor-input" autocomplete="off">
+
+            <label>Tipo</label>
+            <div class="button-select">
+                <select id="tipo-select">
+                    <option value="valor-0">Selecione</option>
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saida</option>
+                </select>
+
+                <button>Incluir</button>
+            </div>
+        </form>
+
+        <div class="resultados">
+            <table class="tabela-resultados">
+                <thead>
+                    <tr>
+                        <td class="transacao-valor">
+                            <h4>Descrição</h4>
+                        </td>
+                        <td class="transacao-valor">
+                            <h4>Valor</h4>
+                        </td>
+                        <td class="transacao-tipo">
+                            <h4>Tipo</h4>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
